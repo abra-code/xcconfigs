@@ -191,7 +191,7 @@ All build settings are translated into environment variables in script phases ex
 
 If you would like to check and verify how the xcconfig and build settings in general were resolved by Xcode for given target you can do it in 2 ways:
 * add a script phase to your target if you don't have one and look at the complete set of exported environment variables during the build
-* use xcodebuild **-showBuilSettings** option in Terminal for for specified -project and -target 
+* use xcodebuild **-showBuildSettings** option in Terminal for for specified -project and -target 
 
 
 

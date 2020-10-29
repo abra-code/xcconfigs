@@ -109,7 +109,7 @@ resolves as:
 	FOO = bar
 ```
 
-*If we have FOO in project-level xcconfig as:
+* If we have FOO in project-level xcconfig as:
  ```
 	FOO = foo
 ```
@@ -160,7 +160,7 @@ This way you can construct complex variables at any level which are switchable b
 
 ### No Line Continuation Support
 
-In many languages the preprocessor supports "\" at the end of line as a line continuation character, allowing vertical construction for a long list of values. Xcconfigs do not support this so your choices are:
+In many languages the preprocessor supports "\\" at the end of line as a line continuation character, allowing vertical construction for a long list of values. Xcconfigs do not support this so your choices are:
 * Put everything in one long horizontal line which may scroll for many pages like this:
 ```
 OTHER_LDFLAGS = -framework MyFrameworkOne -framework MyFrameworkTwo -framework MyFrameworkThree -framework MyFrameworkFour -framework MyFrameworkFive

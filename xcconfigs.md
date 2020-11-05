@@ -79,7 +79,7 @@ There is one important resolution rule which at first may seem unintuitive but i
 ```
 FOO = one
 BAR = $(FOO) two
-FOO = tree
+FOO = three
 ```
 The  expectation would be that if the order matters it would resolve as `BAR = one two`. But actually xcconfigs subsitutes variables lazily and the later overriden value of FOO wins and therefore the resolution is:
 ```

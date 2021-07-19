@@ -26,7 +26,7 @@ Full inheritance structure is:
 * Xcode built-in settings per platform (macOS, iOS, etc) - immutable
 * Project-level xcconfig
 * Project-level settings embedded in Xcode project
-* Target-level Xcconfig
+* Target-level xcconfig
 * Target-level settings embedded in Xcode project
 
 When building with xcodebuild, there are 2 additional levels:
@@ -178,6 +178,10 @@ OTHER_LDFLAGS = $(LINK_1) $(LINK_2) $(LINK_3) $(LINK_4) $(LINK_5)
 
 That way the long concatenated line is not interesting with incrementing index but the individual `LINK_N` variables are now vertical for easy reading.
 `LINK_1... LINK_NN` can also be hidden as predefined slots in a separate included xcconfig. You could have a 100 or more of such predefined slots and the unused ones would turn into empty strings in final concatenation.
+
+7/19/2021 Update: the relase notes for Xcode 13 beta say the line continuation support has finally been added!
+\
+https://developer.apple.com/documentation/xcode-release-notes/xcode-13-beta-release-notes
 
 
 ### Build Settings in Script Phases
